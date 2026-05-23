@@ -72,18 +72,31 @@
 # print("   hello world   ".strip()) # "hello world"
 
 # # Find the length of a given string without using the len() function
-s = input("Enter a string: ")
-counter = 0
-for i in (s):
-  counter +=1
+# s = input("Enter a string: ")
+# counter = 0
+# for i in (s):
+#   counter +=1
 
-print("The length of the string is:", counter)  
+# print("The length of the string is:", counter)  
 
 # Extract username from a given email. 
 # Eg if the email is afnan405@gmail.com 
 # then the username should be afnan405
-email = input("enter the email: ")
-position = email.index("@")
+# email = input("enter the email: ")
+# position = email.index("@")
 
-user =email[0:position]
-print("The user name is:", user)
+# user =email[0:position]
+# print("The user name is:", user)
+
+
+# Write a program which can remove a particular character from a string.
+s = input('enter the string')
+term = input('what would like to remove')
+
+result = ''
+
+for i in s:
+  if i != term:
+    result = result + i
+
+print(result)
